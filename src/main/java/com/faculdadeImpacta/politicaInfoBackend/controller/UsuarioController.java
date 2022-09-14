@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.client.RestTemplate;
 import org.springframework.web.server.ResponseStatusException;
 
 import javax.validation.Valid;
@@ -20,11 +19,14 @@ public class UsuarioController {
     @Autowired
     private UsuarioRepository usuarioRepository;
 
+    //Mostrar todos os usuarios criados
     @GetMapping
     public ResponseEntity<List<Usuario>> getAll(){
         return ResponseEntity.ok(usuarioRepository.findAll());
     }
 
+
+    //Cadastrar um usuario
     @PostMapping
     public ResponseEntity<Usuario> cadastrarUsuario(@RequestBody @Valid Usuario usuario){
         Optional<Usuario> emailDuplicado = usuarioRepository.findByEmail(usuario.getEmail());
@@ -33,5 +35,6 @@ public class UsuarioController {
         }
         throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Email já cadastrado!");
     }
+
 
 }

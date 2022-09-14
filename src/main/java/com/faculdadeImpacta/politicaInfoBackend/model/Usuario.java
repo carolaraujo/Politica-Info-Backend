@@ -1,8 +1,9 @@
 package com.faculdadeImpacta.politicaInfoBackend.model;
 
-import com.sun.istack.NotNull;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
+
 
 import javax.persistence.*;
 import javax.validation.constraints.Email;
@@ -11,6 +12,7 @@ import javax.validation.constraints.NotBlank;
 @Entity
 @Getter
 @Setter
+@NoArgsConstructor
 @Table(name="usuario")
 public class Usuario {
 
@@ -18,16 +20,19 @@ public class Usuario {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotNull
-    @NotBlank
+
+    @NotBlank(message="{name.not.blank}")
     private String nome;
 
-    @NotNull
-    @NotBlank
-    @Email
+
+    @NotBlank(message="{email.not.blank}")
+    @Email(message="{email.not.blank}")
     @Column
     private String email;
 
-    public Usuario(){}
+    public Usuario(String nome, String email) {
+        this.nome = nome;
+        this.email = email;
+    }
 
 }
