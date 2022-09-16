@@ -1,38 +1,31 @@
 package com.faculdadeImpacta.politicaInfoBackend.model;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 
 import javax.persistence.*;
 import javax.validation.constraints.Email;
-import javax.validation.constraints.NotBlank;
+import java.io.Serializable;
 
 @Entity
-@Getter
-@Setter
+@Data
+@AllArgsConstructor
 @NoArgsConstructor
+@Builder
 @Table(name="usuario")
-public class Usuario {
+public class Usuario implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
 
-    @NotBlank(message="{name.not.blank}")
+    @Column(name = "nome", nullable = false)
     private String nome;
 
 
-    @NotBlank(message="{email.not.blank}")
-    @Email(message="{email.not.blank}")
-    @Column
+    @Column(name = "email", nullable = false)
+    @Email
     private String email;
-
-    public Usuario(String nome, String email) {
-        this.nome = nome;
-        this.email = email;
-    }
 
 }
