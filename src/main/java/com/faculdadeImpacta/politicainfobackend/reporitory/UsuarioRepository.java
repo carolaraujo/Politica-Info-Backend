@@ -1,6 +1,6 @@
-package com.faculdadeImpacta.politicaInfoBackend.reporitory;
+package com.faculdadeImpacta.politicainfobackend.reporitory;
 
-import com.faculdadeImpacta.politicaInfoBackend.model.Usuario;
+import com.faculdadeImpacta.politicainfobackend.model.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

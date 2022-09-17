@@ -1,7 +1,7 @@
-package com.faculdadeImpacta.politicaInfoBackend.controller;
+package com.faculdadeImpacta.politicainfobackend.controller;
 
-import com.faculdadeImpacta.politicaInfoBackend.model.Usuario;
-import com.faculdadeImpacta.politicaInfoBackend.service.UsuarioService;
+import com.faculdadeImpacta.politicainfobackend.model.Usuario;
+import com.faculdadeImpacta.politicainfobackend.service.UsuarioService;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

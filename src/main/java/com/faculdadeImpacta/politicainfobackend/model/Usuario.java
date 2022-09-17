@@ -1,4 +1,4 @@
-package com.faculdadeImpacta.politicaInfoBackend.model;
+package com.faculdadeImpacta.politicainfobackend.model;
 
 import lombok.*;
 

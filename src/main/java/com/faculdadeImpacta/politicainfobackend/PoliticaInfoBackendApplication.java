@@ -1,4 +1,4 @@
-package com.faculdadeImpacta.politicaInfoBackend;
+package com.faculdadeImpacta.politicainfobackend;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.boot.SpringApplication;

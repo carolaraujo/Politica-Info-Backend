@@ -1,7 +1,7 @@
-package com.faculdadeImpacta.politicaInfoBackend.service;
+package com.faculdadeImpacta.politicainfobackend.service;
 
-import com.faculdadeImpacta.politicaInfoBackend.model.Usuario;
-import com.faculdadeImpacta.politicaInfoBackend.reporitory.UsuarioRepository;
+import com.faculdadeImpacta.politicainfobackend.model.Usuario;
+import com.faculdadeImpacta.politicainfobackend.reporitory.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
