@@ -13,19 +13,37 @@ API Backend do Trabalho de Conclusão do Curso de Graduação em Análise e Dese
 
 ## Como testar a aplicação no Postman ?
 
-URL para cadastrar um Usuario
+URL para cadastrar um usuário
 
 POST => http://localhost:8080/usuarios
 
 {
-"nome": "Nome do usuario aqui",
+"nome": "Nome do usuário aqui",
 
 "email": "emaildousuarioaqui@email.com"
 }
 
-URL para mostrar todos os usuarios cadastrados
+URL para mostrar todos os usuários cadastrados
 
 GET => http://localhost:8080/usuarios
+
+URL para buscar usuários por ID
+
+GET => http://localhost:8080/usuarios/2
+
+O ultimo número da URL é o ID que deseja buscar
+
+URL para atualizar usuário 
+
+PUT => http://localhost:8080/usuarios/2
+
+O último número da URL é o ID que deseja atualizar
+
+URL para deletar um usuário
+
+DELETE => http://localhost:8080/usuarios/2
+
+O último número da URL é o ID que deseja excluir
 
 ## Como visualizar os cadastros no Bando de Dados H2 ?
 
