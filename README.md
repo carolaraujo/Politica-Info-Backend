@@ -7,14 +7,14 @@ API Backend do Trabalho de Conclusão do Curso de Graduação em Análise e Dese
 
 ## :hammer: Funcionalidades do projeto
 
-- `Funcionalidade 1`: CRUD da tela de Login no Banco de Dados H2
+- `Funcionalidade 1`: CRUD da tela de Login no Banco de Dados Postgres
 - `Funcionalidade 2`: Consumo da API da Câmara dos Deputados
 - `Funcionalidade 3`: Filtro dos endpoints da API da Câmara dos Deputados
 
 ## 🛠️ Abrir e rodar o projeto
 1- Use o seu IDE de preferência
 
-2 - Certifique de ter baixado o JDK/JRE 1.8 e o Tomcat
+2 - Certifique de ter baixado o JDK/JRE 1.8 ou 11
 
 3 - Clique no botão direito do mouse em "run" em cima da classe PoliticaInfoApplication para rodar a aplicação
 
@@ -54,14 +54,12 @@ DELETE => http://localhost:8080/usuarios/2
 
 O último número da URL é o ID que deseja excluir
 
-## 🛠️ Como visualizar os cadastros no Banco de Dados H2 ?
+## 🛠️ Como visualizar os cadastros no Banco de Dados Postgres?
 
-O banco de dados H2 é um database de homologação usando para testes em desenvolvimento, não precisa instalar nenhum software para poder visualizar as tabelas. 
-Nessa apicação utilize a url abaixo em seu navegador de preferência
+Conectar em algum banco de dados ou visualizador de banco de dados usando as seguintes credenciais:
 
-http://localhost:8080/h2
+postgres://localhost:5432/postgres
 
-login: sa
-
-passaword: (vazio)
+login: postgres
+password: root
 
