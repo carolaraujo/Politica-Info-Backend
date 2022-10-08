@@ -1,5 +1,7 @@
 package com.faculdadeImpacta.politicainfobackend.http;
 
+import com.faculdadeImpacta.politicainfobackend.despesas.ConsultaDespesas;
+
 import java.util.*;
 
 public abstract class ConsultaBuilder<T extends ConsultaBuilder<T>> {
@@ -81,7 +83,7 @@ public abstract class ConsultaBuilder<T extends ConsultaBuilder<T>> {
         return getThis();
     }
 
-    public abstract Consulta build();
+    public abstract ConsultaDespesas build();
 
     protected abstract T getThis();
 }

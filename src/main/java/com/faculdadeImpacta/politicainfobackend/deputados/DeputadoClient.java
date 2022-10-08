@@ -20,4 +20,8 @@ public class DeputadoClient extends CamaraClient {
     public Pagina<Deputado> consultar(ConsultaDeputado consulta) throws IOException, InterruptedException, CamaraClientStatusException {
         return consultarComPaginacao(consulta, ConstantesApiCamara.DEPUTADO_API_URL, Deputado.class);
     }
+
+    private Pagina<Deputado> consultarComPaginacao(ConsultaDeputado consulta, String deputadoApiUrl, Class<Deputado> deputadoClass) {
+        return null;
+    }
 }

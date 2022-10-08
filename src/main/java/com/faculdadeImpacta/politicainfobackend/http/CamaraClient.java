@@ -1,6 +1,7 @@
 package com.faculdadeImpacta.politicainfobackend.http;
 
 
+import com.faculdadeImpacta.politicainfobackend.despesas.ConsultaDespesas;
 import com.faculdadeImpacta.politicainfobackend.exception.CamaraClientStatusException;
 import com.faculdadeImpacta.politicainfobackend.exception.RecursoNaoExisteException;
 import com.faculdadeImpacta.politicainfobackend.exception.RespostaInesperadaException;
@@ -73,13 +74,13 @@ public class CamaraClient<T> {
         RespostaCamara<List<T>> resposta = executarConsulta(consulta, urlBase, tipoEsperado, segmentosPath);
         return resposta.getDados();
     }
-
-    protected <T> Pagina<T> consultarComPaginacao(Consulta consulta, String urlBase, Type tipoEsperado, String... segmentosPath) throws IOException, InterruptedException, CamaraClientStatusException {
-        RespostaCamara<List<T>> resposta = executarConsulta(consulta, urlBase, tipoEsperado, segmentosPath);
-        return new Pagina<>(resposta.getDados(),
-                extrairCabecalhoTotalItens(resposta),
-                extrairPaginaDaConsulta(consulta));
-    }
+//
+//    protected <T> Pagina<T> consultarComPaginacao(ConsultaDespesas consulta, String urlBase, Type tipoEsperado, String... segmentosPath) throws IOException, InterruptedException, CamaraClientStatusException {
+//        RespostaCamara<List<T>> resposta = executarConsulta(consulta, urlBase, tipoEsperado, segmentosPath);
+//        return new Pagina<>(resposta.getDados(),
+//                extrairCabecalhoTotalItens(resposta),
+//                extrairPaginaDaConsulta(consulta));
+//    }
 
     private <T> RespostaCamara<List<T>> executarConsulta(Consulta consulta, String urlBase, Type tipoEsperado, String... segmentosPath) throws IOException, InterruptedException, CamaraClientStatusException {
         HttpRequest requisicao = prepararConsulta(consulta, urlBase, segmentosPath);

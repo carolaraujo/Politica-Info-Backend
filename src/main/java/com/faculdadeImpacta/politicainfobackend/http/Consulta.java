@@ -1,5 +1,7 @@
 package com.faculdadeImpacta.politicainfobackend.http;
 
+import com.faculdadeImpacta.politicainfobackend.despesas.ConsultaDespesas;
+
 import java.util.Map;
 
 public class Consulta {
@@ -30,8 +32,8 @@ public class Consulta {
         }
 
         @Override
-        public Consulta build() {
-            return new Consulta(getParametros());
+        public ConsultaDespesas build() {
+            return new ConsultaDespesas(getParametros());
         }
     }
 }

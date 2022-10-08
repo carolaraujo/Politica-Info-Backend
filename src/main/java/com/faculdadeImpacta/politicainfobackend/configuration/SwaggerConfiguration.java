@@ -1,4 +1,4 @@
-package com.faculdadeImpacta.politicainfobackend;
+package com.faculdadeImpacta.politicainfobackend.configuration;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;

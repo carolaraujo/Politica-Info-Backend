@@ -1,6 +1,8 @@
 package com.faculdadeImpacta.politicainfobackend.deputados;
 
+import com.faculdadeImpacta.politicainfobackend.despesas.ConsultaDespesas;
 import com.faculdadeImpacta.politicainfobackend.dominio.Estado;
+import com.faculdadeImpacta.politicainfobackend.dominio.Genero;
 import com.faculdadeImpacta.politicainfobackend.http.Consulta;
 import com.faculdadeImpacta.politicainfobackend.http.ConsultaBuilder;
 import com.faculdadeImpacta.politicainfobackend.http.ModoValidacao;
@@ -41,14 +43,14 @@ public class ConsultaDeputado extends Consulta {
             return this;
         }
 
-//        public Builder genero(Genero genero) {
-//            adicionarParam("siglaSexo", genero.name().toUpperCase().substring(0, 1));
-//            return this;
-//        }
+        public Builder genero(Genero genero) {
+            adicionarParam("siglaSexo", genero.name().toUpperCase().substring(0, 1));
+            return this;
+        }
 
         @Override
-        public ConsultaDeputado build() {
-            return new ConsultaDeputado(getParametros());
+        public ConsultaDespesas build() {
+            return new ConsultaDespesas(getParametros());
         }
 
         @Override
