@@ -1,13 +1,10 @@
 package com.faculdadeImpacta.politicainfobackend.dominio;
 
-import lombok.Getter;
-import lombok.Setter;
 
 import java.net.URL;
 import java.util.Objects;
 
-@Getter
-@Setter
+
 public class Deputado implements Comparable<Deputado> {
 
     private final int id;
@@ -26,11 +23,71 @@ public class Deputado implements Comparable<Deputado> {
 
     private Estado siglaUf;
 
-    public Deputado(int id){
-        if(id <= 0){
+    public Deputado(int id) {
+        if (id <= 0) {
             throw new IllegalArgumentException("Deputados tem que ter ID maior que zero");
         }
         this.id = id;
+    }
+
+    public int getIdLegislatura() {
+        return idLegislatura;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public Estado getSiglaUf() {
+        return siglaUf;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public URL getUri() {
+        return uri;
+    }
+
+    public String getSiglaPartido() {
+        return siglaPartido;
+    }
+
+    public URL getUrlFoto() {
+        return urlFoto;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setUri(URL uri) {
+        this.uri = uri;
+    }
+
+    public void setSiglaPartido(String siglaPartido) {
+        this.siglaPartido = siglaPartido;
+    }
+
+    public void setUrlFoto(URL urlFoto) {
+        this.urlFoto = urlFoto;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setIdLegislatura(int idLegislatura) {
+        this.idLegislatura = idLegislatura;
+    }
+
+    public void setSiglaUf(Estado siglaUf) {
+        this.siglaUf = siglaUf;
     }
 
     public String getNomeFormatado() {
