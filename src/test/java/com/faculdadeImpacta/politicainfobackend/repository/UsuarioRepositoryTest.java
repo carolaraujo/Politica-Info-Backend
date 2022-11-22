@@ -24,7 +24,6 @@ public class UsuarioRepositoryTest {
     @Autowired
     private com.faculdadeImpacta.politicainfobackend.reporitory.UsuarioRepository UsuarioRepository;
 
-    // JUnit test for saveEmployee
     @Test
     @Order(1)
     @Rollback(value = false)
@@ -83,8 +82,6 @@ public class UsuarioRepositoryTest {
         Usuario usuario = UsuarioRepository.findById(1L).get();
 
         UsuarioRepository.delete(usuario);
-
-        //employeeRepository.deleteById(1L);
 
         Usuario user1 = null;
 
