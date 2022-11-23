@@ -1,4 +1,4 @@
-package com.faculdadeImpacta.politicainfobackend.exception;
+package com.faculdadeImpacta.politicainfobackend.apiCamaraDeputados.exception;
 
 public class CamaraClientStatusException extends Throwable {
 

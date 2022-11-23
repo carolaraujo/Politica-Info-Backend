@@ -1,4 +1,4 @@
-package com.faculdadeImpacta.politicainfobackend.http;
+package com.faculdadeImpacta.politicainfobackend.apiCamaraDeputados.http;
 
 import java.net.URI;
 import java.net.http.HttpRequest;

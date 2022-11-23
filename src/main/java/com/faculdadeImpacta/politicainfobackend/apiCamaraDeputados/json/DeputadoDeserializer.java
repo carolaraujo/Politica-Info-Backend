@@ -1,6 +1,6 @@
-package com.faculdadeImpacta.politicainfobackend.json;
+package com.faculdadeImpacta.politicainfobackend.apiCamaraDeputados.json;
 
-import com.faculdadeImpacta.politicainfobackend.dominio.Deputado;
+import com.faculdadeImpacta.politicainfobackend.apiCamaraDeputados.dominio.Deputado;
 import com.google.gson.*;
 
 import java.lang.reflect.Type;

@@ -1,11 +1,11 @@
-package com.faculdadeImpacta.politicainfobackend.deputados;
+package com.faculdadeImpacta.politicainfobackend.apiCamaraDeputados.deputados;
 
-import com.faculdadeImpacta.politicainfobackend.dominio.Deputado;
-import com.faculdadeImpacta.politicainfobackend.exception.CamaraClientStatusException;
-import com.faculdadeImpacta.politicainfobackend.http.CamaraClient;
-import com.faculdadeImpacta.politicainfobackend.http.ConstantesApiCamara;
-import com.faculdadeImpacta.politicainfobackend.http.Pagina;
-import com.faculdadeImpacta.politicainfobackend.http.RespostaCamara;
+import com.faculdadeImpacta.politicainfobackend.apiCamaraDeputados.dominio.Deputado;
+import com.faculdadeImpacta.politicainfobackend.apiCamaraDeputados.exception.CamaraClientStatusException;
+import com.faculdadeImpacta.politicainfobackend.apiCamaraDeputados.http.CamaraClient;
+import com.faculdadeImpacta.politicainfobackend.apiCamaraDeputados.http.ConstantesApiCamara;
+import com.faculdadeImpacta.politicainfobackend.apiCamaraDeputados.http.Pagina;
+import com.faculdadeImpacta.politicainfobackend.apiCamaraDeputados.http.RespostaCamara;
 
 import java.io.IOException;
 import java.util.Optional;

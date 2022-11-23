@@ -1,11 +1,11 @@
-package com.faculdadeImpacta.politicainfobackend.deputados;
+package com.faculdadeImpacta.politicainfobackend.apiCamaraDeputados.deputados;
 
-import com.faculdadeImpacta.politicainfobackend.despesas.ConsultaDespesas;
-import com.faculdadeImpacta.politicainfobackend.dominio.Estado;
-import com.faculdadeImpacta.politicainfobackend.dominio.Genero;
-import com.faculdadeImpacta.politicainfobackend.http.Consulta;
-import com.faculdadeImpacta.politicainfobackend.http.ConsultaBuilder;
-import com.faculdadeImpacta.politicainfobackend.http.ModoValidacao;
+import com.faculdadeImpacta.politicainfobackend.apiCamaraDeputados.despesas.ConsultaDespesas;
+import com.faculdadeImpacta.politicainfobackend.apiCamaraDeputados.dominio.Estado;
+import com.faculdadeImpacta.politicainfobackend.apiCamaraDeputados.dominio.Genero;
+import com.faculdadeImpacta.politicainfobackend.apiCamaraDeputados.http.Consulta;
+import com.faculdadeImpacta.politicainfobackend.apiCamaraDeputados.http.ConsultaBuilder;
+import com.faculdadeImpacta.politicainfobackend.apiCamaraDeputados.http.ModoValidacao;
 
 import java.util.Map;
 

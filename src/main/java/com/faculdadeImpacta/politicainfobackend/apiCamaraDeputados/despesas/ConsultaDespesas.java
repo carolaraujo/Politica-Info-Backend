@@ -1,7 +1,7 @@
-package com.faculdadeImpacta.politicainfobackend.despesas;
+package com.faculdadeImpacta.politicainfobackend.apiCamaraDeputados.despesas;
 
-import com.faculdadeImpacta.politicainfobackend.http.ConsultaBuilder;
-import com.faculdadeImpacta.politicainfobackend.http.ModoValidacao;
+import com.faculdadeImpacta.politicainfobackend.apiCamaraDeputados.http.ConsultaBuilder;
+import com.faculdadeImpacta.politicainfobackend.apiCamaraDeputados.http.ModoValidacao;
 
 import java.util.List;
 import java.util.Map;

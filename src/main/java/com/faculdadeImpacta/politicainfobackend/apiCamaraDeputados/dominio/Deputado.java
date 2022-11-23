@@ -1,4 +1,4 @@
-package com.faculdadeImpacta.politicainfobackend.dominio;
+package com.faculdadeImpacta.politicainfobackend.apiCamaraDeputados.dominio;
 
 
 import java.net.URL;

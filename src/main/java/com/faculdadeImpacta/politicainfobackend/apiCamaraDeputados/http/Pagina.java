@@ -1,4 +1,4 @@
-package com.faculdadeImpacta.politicainfobackend.http;
+package com.faculdadeImpacta.politicainfobackend.apiCamaraDeputados.http;
 
 import java.util.ArrayList;
 import java.util.Collection;

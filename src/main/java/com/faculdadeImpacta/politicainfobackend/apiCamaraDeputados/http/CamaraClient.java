@@ -1,11 +1,10 @@
-package com.faculdadeImpacta.politicainfobackend.http;
+package com.faculdadeImpacta.politicainfobackend.apiCamaraDeputados.http;
 
 
-import com.faculdadeImpacta.politicainfobackend.despesas.ConsultaDespesas;
-import com.faculdadeImpacta.politicainfobackend.exception.CamaraClientStatusException;
-import com.faculdadeImpacta.politicainfobackend.exception.RecursoNaoExisteException;
-import com.faculdadeImpacta.politicainfobackend.exception.RespostaInesperadaException;
-import com.faculdadeImpacta.politicainfobackend.json.GsonSingleton;
+import com.faculdadeImpacta.politicainfobackend.apiCamaraDeputados.exception.CamaraClientStatusException;
+import com.faculdadeImpacta.politicainfobackend.apiCamaraDeputados.exception.RecursoNaoExisteException;
+import com.faculdadeImpacta.politicainfobackend.apiCamaraDeputados.exception.RespostaInesperadaException;
+import com.faculdadeImpacta.politicainfobackend.apiCamaraDeputados.json.GsonSingleton;
 import com.google.gson.reflect.TypeToken;
 
 import java.io.IOException;

@@ -1,7 +1,6 @@
-package com.faculdadeImpacta.politicainfobackend.json;
+package com.faculdadeImpacta.politicainfobackend.apiCamaraDeputados.json;
 
-import com.faculdadeImpacta.politicainfobackend.dominio.Deputado;
-import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateTimeDeserializer;
+import com.faculdadeImpacta.politicainfobackend.apiCamaraDeputados.dominio.Deputado;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
