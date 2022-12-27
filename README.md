@@ -1,9 +1,9 @@
 <h1 align="center">Politica-Info-Backend</h1>
 <h4 align="center"> 
-    :construction:  Projeto em construção  :construction:
+    :construction:  Projeto Finalizado  :construction:
 </h4>
 
-API Backend do Trabalho de Conclusão do Curso de Graduação em Análise e Desenvolvimento de Sistemas
+API Backend do Trabalho de Conclusão do Curso de Graduação em Análise e Desenvolvimento de Sistemas da Faculdade Impacta de Tecnologia 
 
 ## :hammer: Funcionalidades do projeto
 
